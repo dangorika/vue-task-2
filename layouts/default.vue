@@ -2,9 +2,9 @@
   <div>
     <main-header></main-header>
     <transition name="fade">
-      <div>
+      <!-- <div> -->
         <nuxt />
-      </div>
+      <!-- </div> -->
     </transition>
     <main-footer></main-footer>
   </div>
