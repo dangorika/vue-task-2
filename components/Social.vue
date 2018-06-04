@@ -1,24 +1,27 @@
 <template>
   <div class="socials">
-    <a href=""><facebook-icon /></a>
-    <a href=""><twitter-icon /></a>
-    <a href=""><pinterest-icon /></a>
-    <a href=""><google-plus-icon /></a>
+    <a href=""><i v-html="TwitterIcon"></i></a>
+    <a href=""><i v-html="FacebookIcon"></i></a>
+    <a href=""><i v-html="PinterestIcon"></i></a>
+    <a href=""><i v-html="GooglePlusIcon"></i></a>
   </div>
 </template>
 
 <script>
-import FacebookIcon from 'vue-material-design-icons/facebook.vue';
-import TwitterIcon from 'vue-material-design-icons/twitter.vue';
-import PinterestIcon from 'vue-material-design-icons/pinterest.vue';
-import GooglePlusIcon from 'vue-material-design-icons/google-plus.vue';
+import TwitterIcon from '~/assets/icons/twitter.svg';
+import FacebookIcon from '~/assets/icons/facebook.svg';
+import PinterestIcon from '~/assets/icons/pinterest.svg';
+import GooglePlusIcon from '~/assets/icons/google-plus.svg';
+
 export default {
   name: 'Social',
-  components: {
-    FacebookIcon,
-    TwitterIcon,
-    PinterestIcon,
-    GooglePlusIcon
+  data() {
+    return {
+      FacebookIcon,
+      TwitterIcon,
+      PinterestIcon,
+      GooglePlusIcon
+    }
   }
 }
 </script>
@@ -39,7 +42,7 @@ export default {
     display: block
     margin-right: 10px
     position: relative
-    span
+    i
       +vcenter
       font-size: 20px
 

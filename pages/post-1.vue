@@ -1,6 +1,6 @@
 <template>
   <div class="post-page">
-    <main-layout>
+
       <div class="l">
         <div class="post">
           <h2 class="post__title">Year in Review: Our Favourite Apps from 2012</h2>
@@ -20,7 +20,7 @@
 
         </div>
       </div>
-    </main-layout>
+
   </div>
 </template>
 

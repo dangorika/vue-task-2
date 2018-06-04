@@ -1,7 +1,7 @@
 <template>
   <div>
     <main-header></main-header>
-    <transition name="fade">
+    <transition name="fade" mode="in-out">
       <!-- <div> -->
         <nuxt />
       <!-- </div> -->
@@ -11,8 +11,6 @@
 </template>
 
 <script>
-import 'vue-material-design-icons/styles.css'
-
 import MainHeader from '~/components/MainHeader';
 import MainFooter from '~/components/MainFooter';
 export default {
@@ -35,8 +33,11 @@ html
   line-height: 1.4
   color: #000
   +smooth-font
-// .material-design-icon > .material-design-icon__svg
-//   position: static !important
+svg
+  width: 1em
+  height: 1em
+  fill: currentColor
+  display: block
 .l
   max-width: 950px
   margin: 0 auto
