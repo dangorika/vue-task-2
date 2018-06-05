@@ -74,6 +74,9 @@ export default {
       ]
     }
   },
+  transition() {
+    return 'slide'
+  },
   components: {
     Person
   }
@@ -83,6 +86,19 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="sass">
 @import '../helpers/all'
+
+.slide-enter-active
+  transition: opacity .5s ease-in-out, transform .5s ease-in-out
+.slide-leave-active
+  transition: opacity .5s ease-in-out, transform .5s ease-in-out
+
+.slide-enter, .slide-leave
+  transform: translateY(10vh)
+  opacity: 0
+.slide-enter-to, .slide-leave-to
+  transform: translateY(0)
+  opacity: 1
+
 .about
   &__in
     padding-top: 70px

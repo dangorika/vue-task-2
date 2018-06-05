@@ -38,11 +38,4 @@ export default {
     color: #000
     +lat-b
     text-transform: capitalize
-    // &:not(.btn-more__text)
-    //   border: 1px solid #000
-    //   border-radius: 50%
-    //   width: 20px
-    //   height: 20px
-    //   font-size: 12px
-    //   position: relative
 </style>

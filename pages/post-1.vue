@@ -33,6 +33,9 @@ export default {
       msg: 'Welcome to Your Vue.js App'
     }
   },
+  transition() {
+    return 'slide'
+  },
   components: {
     MainLayout
   }
@@ -42,6 +45,18 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="sass">
 @import '../helpers/all'
+
+.slide-enter-active
+  transition: opacity .5s ease-in-out, transform .5s ease-in-out
+.slide-leave-active
+  transition: opacity .5s ease-in-out, transform .5s ease-in-out
+
+.slide-enter, .slide-leave
+  transform: translateY(10vh)
+  opacity: 0
+.slide-enter-to, .slide-leave-to
+  transform: translateY(0)
+  opacity: 1
 
 .post
   padding: 70px 0

@@ -24,12 +24,8 @@
 </template>
 
 <script>
-// import Tab from '@/components/Tab';
 export default {
   name: 'Tabs',
-  // components: {
-  //   Tab
-  // },
   created() {
     this.tabs = this.$children;
   },
@@ -49,6 +45,8 @@ export default {
   &__nav
     background: #f8f8f8
     border-bottom: #d4d4d4
+    .l
+      position: relative
     ul
       width: percentage(508/950)
       margin-left: auto
@@ -64,4 +62,9 @@ export default {
         border-bottom: 1px solid #000
   &__content
     padding: 70px 0
+  &__search
+    position: absolute
+    top: 50%
+    left: 0
+    transform: translateY(-50%)
 </style>

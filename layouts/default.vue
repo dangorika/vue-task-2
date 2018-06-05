@@ -1,11 +1,7 @@
 <template>
   <div>
     <main-header></main-header>
-    <transition name="fade" mode="in-out">
-      <!-- <div> -->
-        <nuxt />
-      <!-- </div> -->
-    </transition>
+      <nuxt />
     <main-footer></main-footer>
   </div>
 </template>
@@ -41,10 +37,4 @@ svg
 .l
   max-width: 950px
   margin: 0 auto
-.fade-enter-active, .fade-leave-active
-  transition: opacity .25s
-.fade-enter-active
-  transition-delay: .25s
-.fade-enter, .fade-leave-to
-  opacity: 0
 </style>
